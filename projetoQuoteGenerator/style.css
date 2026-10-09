@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #06040a;
+    background-image:
+        radial-gradient(circle at 50% 20%, rgba(123, 44, 191, 0.25) 0%, transparent 60%),
+        radial-gradient(circle at 80% 80%, rgba(0, 255, 102, 0.08) 0%, transparent 50%);
+    color: #e0aaff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.quote-box {
+    background-color: #0d0814;
+    border: 2px solid #7b2cbf;
+    box-shadow: 0 0 25px rgba(123, 44, 191, 0.4), inset 0 0 15px rgba(0, 0, 0, 0.9);
+    border-radius: 4px;
+    padding: 40px;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    position: relative;
+}
+
+.quote-box::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 20px;
+    right: 20px;
+    height: 2px;
+    background: linear-gradient(90deg, #7b2cbf, #00ff66, #7b2cbf);
+}
+
+.chem-badge {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.75rem;
+    color: #00ff66;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    text-shadow: 0 0 8px rgba(0, 255, 102, 0.6);
+}
+
+.quote-box h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 0 0 12px #9d4edd;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.quote-box h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: #00ff66;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 8px #00ff66;
+}
+
+blockquote {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #00ff66;
+    min-height: 90px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+blockquote::before {
+    content: '“ ';
+    color: #9d4edd;
+    font-size: 1.8rem;
+}
+
+blockquote::after {
+    content: ' ”';
+    color: #9d4edd;
+    font-size: 1.8rem;
+}
+
+span {
+    display: block;
+    font-size: 1.05rem;
+    color: #c77dff;
+    float: right;
+    position: relative;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+span::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: #00ff66;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.quote-box div {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.quote-box button {
+    background: linear-gradient(135deg, #3c096c, #240046);
+    color: #00ff66;
+    border: 1px solid #7b2cbf;
+    border-radius: 2px;
+    padding: 12px 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.quote-box button:hover {
+    background: #5a189a;
+    box-shadow: 0 0 15px #9d4edd;
+    color: #ffffff;
+}
+
+.quote-box button:nth-child(2) {
+    background: transparent;
+    color: #e0aaff;
+    border-color: #3c096c;
+}
+
+.quote-box button:nth-child(2):hover {
+    border-color: #00ff66;
+    color: #00ff66;
+    box-shadow: 0 0 12px rgba(0, 255, 102, 0.4);
+}
